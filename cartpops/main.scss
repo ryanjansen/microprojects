@@ -1,0 +1,206 @@
+// Base
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+// Typography
+
+body {
+  font-family: "Roboto";
+}
+
+.heading__primary {
+  font-size: 5rem;
+  line-height: 7.4rem;
+}
+
+// Colors
+
+:root {
+  --color-dark: #0a0a16;
+  --color-dark-1: #1c1c41;
+  --color-primary-dark: #6e28d6;
+  --color-primary-light: #7022e2;
+}
+
+// Buttons
+
+.btn {
+  display: inline-block;
+  margin-top: 1.8rem;
+  margin-right: 2rem;
+  border-radius: 5px;
+  font-size: 2rem;
+  padding: 2rem 3rem;
+  text-decoration: none;
+  color: white;
+
+  &--color {
+    background: linear-gradient(120deg, #9d60f8, var(--color-primary-light));
+    -webkit-animation: btnColorAnimation 5s ease infinite;
+    -moz-animation: btnColorAnimation 5s ease infinite;
+    animation: btnColorAnimation 30s ease infinite;
+  }
+
+  &--dark {
+    background-color: var(--color-dark-1);
+    font-weight: 700;
+  }
+
+  @-webkit-keyframes btnColorAnimation {
+    0% {
+      background-position: 0% 51%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 51%;
+    }
+  }
+  @-moz-keyframes btnColorAnimation {
+    0% {
+      background-position: 0% 51%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 51%;
+    }
+  }
+  @keyframes btnColorAnimation {
+    0% {
+      background-position: 0% 51%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 51%;
+    }
+  }
+}
+
+// Nav
+
+.navigation {
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 100%;
+    max-width: 140rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    &--image {
+      height: 4rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    width: 38rem;
+    justify-content: space-between;
+  }
+
+  &__link {
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: #a1a1a1;
+    transition: color 0.3s;
+    background: linear-gradient(
+      to right,
+      var(--color-primary-dark),
+      var(--color-primary-light)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    &:hover {
+      color: transparent;
+    }
+  }
+
+  &__button {
+    border: none;
+    padding: 2rem 4rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    background-color: var(--color-dark-1);
+  }
+}
+
+// Header
+.header {
+  background-color: var(--color-dark);
+  background-image: url(./woopops-bg-circle.png);
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: contain;
+  height: 95vh;
+  color: white;
+
+  &__container {
+    padding: 20rem 5rem;
+    max-width: 135rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__content {
+    float: left;
+    margin-top: 5rem;
+    width: 50%;
+  }
+
+  &__newbtn {
+    color: white;
+    padding: 1.5rem 3rem;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 30px;
+    background: var(--color-primary-dark);
+  }
+
+  &__text {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    line-height: 4rem;
+
+    &--link {
+      color: white;
+    }
+  }
+
+  &__image {
+    float: right;
+    width: 45%;
+
+    &--img {
+      width: 90%;
+    }
+  }
+}

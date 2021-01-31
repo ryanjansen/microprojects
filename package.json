@@ -1,0 +1,23 @@
+{
+  "name": "microprojects",
+  "version": "1.0.0",
+  "description": "Small projects to improve my fundamentals",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./cartpops/main.scss ./cartpops/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanjansen/microprojects.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanjansen/microprojects/issues"
+  },
+  "homepage": "https://github.com/ryanjansen/microprojects#readme",
+  "dependencies": {
+    "sass": "^1.32.5"
+  }
+}

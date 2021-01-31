@@ -1,0 +1,175 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+.heading__primary {
+  font-size: 5rem;
+  line-height: 7.4rem;
+}
+
+:root {
+  --color-dark: #0a0a16;
+  --color-dark-1: #1c1c41;
+  --color-primary-dark: #6e28d6;
+  --color-primary-light: #7022e2;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1.8rem;
+  margin-right: 2rem;
+  border-radius: 5px;
+  font-size: 2rem;
+  padding: 2rem 3rem;
+  text-decoration: none;
+  color: white;
+}
+.btn--color {
+  background: linear-gradient(120deg, #9d60f8, var(--color-primary-light));
+  -webkit-animation: btnColorAnimation 5s ease infinite;
+  -moz-animation: btnColorAnimation 5s ease infinite;
+  animation: btnColorAnimation 30s ease infinite;
+}
+.btn--dark {
+  background-color: var(--color-dark-1);
+  font-weight: 700;
+}
+@-webkit-keyframes btnColorAnimation {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+@-moz-keyframes btnColorAnimation {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+@keyframes btnColorAnimation {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+
+.navigation {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.navigation__container {
+  display: flex;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+  max-width: 140rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation__logo--image {
+  height: 4rem;
+}
+.navigation__list {
+  display: flex;
+  width: 38rem;
+  justify-content: space-between;
+}
+.navigation__link {
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: #a1a1a1;
+  transition: color 0.3s;
+  background: linear-gradient(to right, var(--color-primary-dark), var(--color-primary-light));
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.navigation__link:hover {
+  color: transparent;
+}
+.navigation__button {
+  border: none;
+  padding: 2rem 4rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  background-color: var(--color-dark-1);
+}
+
+.header {
+  background-color: var(--color-dark);
+  background-image: url(./woopops-bg-circle.png);
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: contain;
+  height: 95vh;
+  color: white;
+}
+.header__container {
+  padding: 20rem 5rem;
+  max-width: 135rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.header__content {
+  float: left;
+  margin-top: 5rem;
+  width: 50%;
+}
+.header__newbtn {
+  color: white;
+  padding: 1.5rem 3rem;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 30px;
+  background: var(--color-primary-dark);
+}
+.header__text {
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  line-height: 4rem;
+}
+.header__text--link {
+  color: white;
+}
+.header__image {
+  float: right;
+  width: 45%;
+}
+.header__image--img {
+  width: 90%;
+}
+
+/*# sourceMappingURL=style.css.map */
